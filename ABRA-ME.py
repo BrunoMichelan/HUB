@@ -12,7 +12,7 @@ def iniciar():
     print("                                          ██     ██  ██     ██  ██     ██")
     print("                                          ██     ██  █████████  █████████")
     print("")
-    print("                                                 build 00119112020")
+    print("                                                 build 00221112020")
     print("-----------------------------------------------------------------------------------------------------------------------")
     print("")
     opcoes()
@@ -91,7 +91,15 @@ def toby_funcoes2():
 def novidades():
     print("-----------------------------------------------------------------------------------------------------------------------")
     print("                                                REGISTRO DE ATUALIZAÇÕES")
-    print("Nada ainda")
+    print("")
+    print("")
+    print("build 00221112020 - • Mais cidades em 'informações de locais'")
+    print("                    • Bugs corrigidos")
+    print("")
+    print("")
+    print("")
+    print("build 00119112020 - • HUB lançado")
+    print("")
     print("")
     print("-----------------------------------------------------------------------------------------------------------------------")
     print("")
@@ -112,9 +120,9 @@ def novidades2():
 def sobre():
     print("-----------------------------------------------------------------------------------------------------------------------")
     print("")
-    print("                                                HUB | build 00119112020")
+    print("                                                HUB | build 00221112020")
     print("")
-    print("                                                   Atualizado 19/11")
+    print("                                                   Atualizado 21/11")
     print("")
     print("-----------------------------------------------------------------------------------------------------------------------")
     print("                                 |                                                 |")
@@ -185,8 +193,8 @@ def info_locais2():
             escol_pais2()
             break
         if keyboard.is_pressed("backspace"):
-            opcoes()
-            opcoes2()
+            toby_funcoes()
+            toby_funcoes2()
             break
 
 #escolher país
@@ -224,6 +232,10 @@ def brasil_estados():
         print("                                 |                                                 |")
         print("-----------------------------------------------------------------------------------------------------------------------")
         print("                                 |                                                 |")
+        print("                                 |                B - Rio de Janeiro               |")
+        print("                                 |                                                 |")
+        print("-----------------------------------------------------------------------------------------------------------------------")
+        print("                                 |                                                 |")
         print("                                 |            Aperte BACKSPACE para voltar         |")
         print("                                 |                                                 |")
         print("-----------------------------------------------------------------------------------------------------------------------")
@@ -233,6 +245,10 @@ def brasil_estados2():
         if keyboard.is_pressed("a"):
             brasil_sp_cidades()
             brasil_sp_cidades2()
+            break
+        if keyboard.is_pressed("b"):
+            brasil_rj_cidades()
+            brasil_rj_cidades2()
             break
         if keyboard.is_pressed("backspace"):
             escol_pais()
@@ -245,7 +261,11 @@ def brasil_sp_cidades():
         print("")
         print("-----------------------------------------------------------------------------------------------------------------------")
         print("                                 |                                                 |")
-        print("                                 |              1 - São José dos Campos            |")
+        print("                                 |                   1 - São Paulo                 |")
+        print("                                 |                                                 |")
+        print("-----------------------------------------------------------------------------------------------------------------------")
+        print("                                 |                                                 |")
+        print("                                 |              2 - São José dos Campos            |")
         print("                                 |                                                 |")
         print("-----------------------------------------------------------------------------------------------------------------------")
         print("                                 |                                                 |")
@@ -256,6 +276,10 @@ def brasil_sp_cidades():
 def brasil_sp_cidades2():
     while True:
         if keyboard.is_pressed("1"):
+            brasil_sao_paulo()
+            brasil_sao_paulo2()
+            break
+        if keyboard.is_pressed("2"):
             brasil_sao_jose_dos_campos()
             brasil_sao_jose_dos_campos2()
             break
@@ -265,14 +289,40 @@ def brasil_sp_cidades2():
             break
 
 #info são josé dos campos
-def brasil_sao_jose_dos_campos():
-        print("Escolha um estado para a cidade")
+def brasil_sao_paulo():
+        print("-----------------------------------------------------------------------------------------------------------------------")
         print("")
+        print("SÃO PAULO")
+        print("")
+        print("Coordenadas -  23°33'1.90'S  46°37'59.60'O")
+        print("Estado - São Paulo")
+        print("População - 12.252.023 (2019)")
+        print("Densidade populacional - 8.054,7 hab./km²")
+        print("Fundação - 25 de janeiro de 1554")
+        print("Altitude - 760 m")
+        print("Área - 1.521 km²")
+        print("1.015 km de Brasília")
+        print("")
+        print("-----------------------------------------------------------------------------------------------------------------------")
+        print("                                 |                                                 |")
+        print("                                 |            Aperte BACKSPACE para voltar         |")
+        print("                                 |                                                 |")
+        print("-----------------------------------------------------------------------------------------------------------------------")
+        print("")
+def brasil_sao_paulo2():
+    while True:
+        if keyboard.is_pressed("backspace"):
+            brasil_sp_cidades()
+            brasil_sp_cidades2()
+            break
+
+#info são josé dos campos
+def brasil_sao_jose_dos_campos():
         print("-----------------------------------------------------------------------------------------------------------------------")
         print("")
         print("SÃO JOSÉ DOS CAMPOS")
         print("")
-        print("Coordenadas -  23°13'25.51'S  45°54'3.30'O")
+        print("Coordenadas - 23°13'25.51'S  45°54'3.30'O")
         print("Estado - São Paulo")
         print("População - 883.900 (2018)")
         print("Densidade populacional - 663,8 hab./km²")
@@ -292,6 +342,59 @@ def brasil_sao_jose_dos_campos2():
         if keyboard.is_pressed("backspace"):
             brasil_sp_cidades()
             brasil_sp_cidades2()
+            break
+
+#brasil rio de janeiro cidades
+def brasil_rj_cidades():
+        print("Escolha uma cidade do estado de Rio de Janeiro - Brasil")
+        print("")
+        print("-----------------------------------------------------------------------------------------------------------------------")
+        print("                                 |                                                 |")
+        print("                                 |                1 - Rio de Janeiro               |")
+        print("                                 |                                                 |")
+        print("-----------------------------------------------------------------------------------------------------------------------")
+        print("                                 |                                                 |")
+        print("                                 |                Aperte Z para voltar             |")
+        print("                                 |                                                 |")
+        print("-----------------------------------------------------------------------------------------------------------------------")
+        print("")
+def brasil_rj_cidades2():
+    while True:
+        if keyboard.is_pressed("1"):
+            brasil_rio_de_janeiro()
+            brasil_rio_de_janeiro2()
+            break
+        if keyboard.is_pressed("z"):
+            brasil_estados()
+            brasil_estados2()
+            break
+
+#info rio de janeiro
+def brasil_rio_de_janeiro():
+        print("-----------------------------------------------------------------------------------------------------------------------")
+        print("")
+        print("RIO DE JANEIRO")
+        print("")
+        print("Coordenadas - 22°54'24.37'S  43°10'22.48'O")
+        print("Estado - Rio de Janeiro")
+        print("População - 6.719.000 (2019)")
+        print("Densidade populacional - 5.597,9 hab./km²")
+        print("Fundação - 1 de março de 1565")
+        print("Altitude - 2 m")
+        print("Área - 1.200km²")
+        print("1.148 km de Brasília")
+        print("")
+        print("-----------------------------------------------------------------------------------------------------------------------")
+        print("                                 |                                                 |")
+        print("                                 |            Aperte BACKSPACE para voltar         |")
+        print("                                 |                                                 |")
+        print("-----------------------------------------------------------------------------------------------------------------------")
+        print("")
+def brasil_rio_de_janeiro2():
+    while True:
+        if keyboard.is_pressed("backspace"):
+            brasil_rj_cidades()
+            brasil_rj_cidades2()
             break
 
 #spam opções
