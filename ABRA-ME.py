@@ -12,7 +12,7 @@ def iniciar():
     print("                                          ██     ██  ██     ██  ██     ██")
     print("                                          ██     ██  █████████  █████████")
     print("")
-    print("                                                 build 00221112020")
+    print("                                                 build 00322112020")
     print("-----------------------------------------------------------------------------------------------------------------------")
     print("")
     opcoes()
@@ -92,13 +92,22 @@ def novidades():
     print("-----------------------------------------------------------------------------------------------------------------------")
     print("                                                REGISTRO DE ATUALIZAÇÕES")
     print("")
+    print("Verifique se seu HUB está atualizado em https://github.com/BrunoMichelan/HUB/releases")
+    print("")
+    print("")
+    print("build 00119112020 - • HUB lançado")
+    print("")
+    print("")
     print("")
     print("build 00221112020 - • Mais cidades em 'informações de locais'")
     print("                    • Bugs corrigidos")
     print("")
     print("")
     print("")
-    print("build 00119112020 - • HUB lançado")
+    print("build 00322112020 - • Mais cidades em 'informações de locais'")
+    print("                    • 1 frase de sorte adicionada em 'estou com sorte'")
+    print("                    • Caixas de texto estão mais detectáveis em 'spam'")
+    print("")
     print("")
     print("")
     print("-----------------------------------------------------------------------------------------------------------------------")
@@ -120,9 +129,9 @@ def novidades2():
 def sobre():
     print("-----------------------------------------------------------------------------------------------------------------------")
     print("")
-    print("                                                HUB | build 00221112020")
+    print("                                                HUB | build 00322112020")
     print("")
-    print("                                                   Atualizado 21/11")
+    print("                                                   Atualizado 22/11")
     print("")
     print("-----------------------------------------------------------------------------------------------------------------------")
     print("                                 |                                                 |")
@@ -214,25 +223,37 @@ def escol_pais():
 def escol_pais2():
     while True:
         if keyboard.is_pressed("1"):
-            brasil_estados()
-            brasil_estados2()
+            brasil_cidades()
+            brasil_cidades2()
             break
         if keyboard.is_pressed("z"):
             info_locais()
             info_locais2()
             break
 
-#brasil estados
-def brasil_estados():
-        print("Escolha um estado para a cidade")
+#brasil cidades
+def brasil_cidades():
+        print("Escolha uma cidade do Brasil")
         print("")
         print("-----------------------------------------------------------------------------------------------------------------------")
         print("                                 |                                                 |")
-        print("                                 |                   A - São Paulo                 |")
+        print("                                 |                    A - Brasília                 |")
         print("                                 |                                                 |")
         print("-----------------------------------------------------------------------------------------------------------------------")
         print("                                 |                                                 |")
-        print("                                 |                B - Rio de Janeiro               |")
+        print("                                 |                   B - São Paulo                 |")
+        print("                                 |                                                 |")
+        print("-----------------------------------------------------------------------------------------------------------------------")
+        print("                                 |                                                 |")
+        print("                                 |              C - São José dos Campos            |")
+        print("                                 |                                                 |")
+        print("-----------------------------------------------------------------------------------------------------------------------")
+        print("                                 |                                                 |")
+        print("                                 |                 D - Rio de Janeiro              |")
+        print("                                 |                                                 |")
+        print("-----------------------------------------------------------------------------------------------------------------------")
+        print("                                 |                                                 |")
+        print("                                 |                 E - Belo Horizonte              |")
         print("                                 |                                                 |")
         print("-----------------------------------------------------------------------------------------------------------------------")
         print("                                 |                                                 |")
@@ -240,55 +261,62 @@ def brasil_estados():
         print("                                 |                                                 |")
         print("-----------------------------------------------------------------------------------------------------------------------")
         print("")
-def brasil_estados2():
+def brasil_cidades2():
     while True:
         if keyboard.is_pressed("a"):
-            brasil_sp_cidades()
-            brasil_sp_cidades2()
+            brasil_brasilia()
+            brasil_brasilia2()
             break
         if keyboard.is_pressed("b"):
-            brasil_rj_cidades()
-            brasil_rj_cidades2()
+            brasil_sao_paulo()
+            brasil_sao_paulo2()
+            break
+        if keyboard.is_pressed("c"):
+            brasil_sao_jose_dos_campos()
+            brasil_sao_jose_dos_campos2()
+            break
+        if keyboard.is_pressed("d"):
+            brasil_rio_de_janeiro()
+            brasil_rio_de_janeiro2()
+            break
+        if keyboard.is_pressed("e"):
+            brasil_belo_horizonte()
+            brasil_belo_horizonte2()
             break
         if keyboard.is_pressed("backspace"):
             escol_pais()
             escol_pais2()
             break
 
-#brasil são paulo cidades
-def brasil_sp_cidades():
-        print("Escolha uma cidade do estado de São Paulo - Brasil")
+#info brasília
+def brasil_brasilia():
+        print("-----------------------------------------------------------------------------------------------------------------------")
         print("")
-        print("-----------------------------------------------------------------------------------------------------------------------")
-        print("                                 |                                                 |")
-        print("                                 |                   1 - São Paulo                 |")
-        print("                                 |                                                 |")
-        print("-----------------------------------------------------------------------------------------------------------------------")
-        print("                                 |                                                 |")
-        print("                                 |              2 - São José dos Campos            |")
-        print("                                 |                                                 |")
+        print("BRASÍLIA")
+        print("")
+        print("Coordenadas -  15°47'S  47°52'O")
+        print("Estado - Distrito Federal")
+        print("População - 2.974.703 (2019)")
+        print("Densidade populacional - 514,7 hab./km²")
+        print("Fundação - 21 de abril de 1960")
+        print("Altitude - 1.171 m")
+        print("Área - 5.779 km²")
+        print("0 km de Brasília")
+        print("")
         print("-----------------------------------------------------------------------------------------------------------------------")
         print("                                 |                                                 |")
         print("                                 |                Aperte Z para voltar             |")
         print("                                 |                                                 |")
         print("-----------------------------------------------------------------------------------------------------------------------")
         print("")
-def brasil_sp_cidades2():
+def brasil_brasilia2():
     while True:
-        if keyboard.is_pressed("1"):
-            brasil_sao_paulo()
-            brasil_sao_paulo2()
-            break
-        if keyboard.is_pressed("2"):
-            brasil_sao_jose_dos_campos()
-            brasil_sao_jose_dos_campos2()
-            break
         if keyboard.is_pressed("z"):
-            brasil_estados()
-            brasil_estados2()
+            brasil_cidades()
+            brasil_cidades2()
             break
 
-#info são josé dos campos
+#info são paulo
 def brasil_sao_paulo():
         print("-----------------------------------------------------------------------------------------------------------------------")
         print("")
@@ -305,15 +333,15 @@ def brasil_sao_paulo():
         print("")
         print("-----------------------------------------------------------------------------------------------------------------------")
         print("                                 |                                                 |")
-        print("                                 |            Aperte BACKSPACE para voltar         |")
+        print("                                 |                Aperte Z para voltar             |")
         print("                                 |                                                 |")
         print("-----------------------------------------------------------------------------------------------------------------------")
         print("")
 def brasil_sao_paulo2():
     while True:
-        if keyboard.is_pressed("backspace"):
-            brasil_sp_cidades()
-            brasil_sp_cidades2()
+        if keyboard.is_pressed("z"):
+            brasil_cidades()
+            brasil_cidades2()
             break
 
 #info são josé dos campos
@@ -322,51 +350,26 @@ def brasil_sao_jose_dos_campos():
         print("")
         print("SÃO JOSÉ DOS CAMPOS")
         print("")
-        print("Coordenadas - 23°13'25.51'S  45°54'3.30'O")
+        print("Coordenadas - 23°13'S  45°54'O")
         print("Estado - São Paulo")
         print("População - 883.900 (2018)")
         print("Densidade populacional - 663,8 hab./km²")
         print("Fundação - 27 de julho de 1767")
         print("Altitude - 600 m")
         print("Área - 1.099 km²")
-        print("81 km de São Paulo")
+        print("870 km de Brasília")
         print("")
-        print("-----------------------------------------------------------------------------------------------------------------------")
-        print("                                 |                                                 |")
-        print("                                 |            Aperte BACKSPACE para voltar         |")
-        print("                                 |                                                 |")
-        print("-----------------------------------------------------------------------------------------------------------------------")
-        print("")
-def brasil_sao_jose_dos_campos2():
-    while True:
-        if keyboard.is_pressed("backspace"):
-            brasil_sp_cidades()
-            brasil_sp_cidades2()
-            break
-
-#brasil rio de janeiro cidades
-def brasil_rj_cidades():
-        print("Escolha uma cidade do estado de Rio de Janeiro - Brasil")
-        print("")
-        print("-----------------------------------------------------------------------------------------------------------------------")
-        print("                                 |                                                 |")
-        print("                                 |                1 - Rio de Janeiro               |")
-        print("                                 |                                                 |")
         print("-----------------------------------------------------------------------------------------------------------------------")
         print("                                 |                                                 |")
         print("                                 |                Aperte Z para voltar             |")
         print("                                 |                                                 |")
         print("-----------------------------------------------------------------------------------------------------------------------")
         print("")
-def brasil_rj_cidades2():
+def brasil_sao_jose_dos_campos2():
     while True:
-        if keyboard.is_pressed("1"):
-            brasil_rio_de_janeiro()
-            brasil_rio_de_janeiro2()
-            break
         if keyboard.is_pressed("z"):
-            brasil_estados()
-            brasil_estados2()
+            brasil_cidades()
+            brasil_cidades2()
             break
 
 #info rio de janeiro
@@ -375,7 +378,7 @@ def brasil_rio_de_janeiro():
         print("")
         print("RIO DE JANEIRO")
         print("")
-        print("Coordenadas - 22°54'24.37'S  43°10'22.48'O")
+        print("Coordenadas - 22°54'S  43°10'O")
         print("Estado - Rio de Janeiro")
         print("População - 6.719.000 (2019)")
         print("Densidade populacional - 5.597,9 hab./km²")
@@ -386,15 +389,43 @@ def brasil_rio_de_janeiro():
         print("")
         print("-----------------------------------------------------------------------------------------------------------------------")
         print("                                 |                                                 |")
-        print("                                 |            Aperte BACKSPACE para voltar         |")
+        print("                                 |                Aperte Z para voltar             |")
         print("                                 |                                                 |")
         print("-----------------------------------------------------------------------------------------------------------------------")
         print("")
 def brasil_rio_de_janeiro2():
     while True:
-        if keyboard.is_pressed("backspace"):
-            brasil_rj_cidades()
-            brasil_rj_cidades2()
+        if keyboard.is_pressed("z"):
+            brasil_cidades()
+            brasil_cidades2()
+            break
+
+#info belo horizonte
+def brasil_belo_horizonte():
+        print("-----------------------------------------------------------------------------------------------------------------------")
+        print("")
+        print("BELO HORIZONTE")
+        print("")
+        print("Coordenadas - 19°55'S  43°56'O")
+        print("Estado - Minas Gerais")
+        print("População - 2.501.576 (2018)")
+        print("Densidade populacional - 7 548,5 hab./km²")
+        print("Fundação - 12 de dezembro de 1897")
+        print("Altitude - 852 m")
+        print("Área - 331km²")
+        print("716 km de Brasília")
+        print("")
+        print("-----------------------------------------------------------------------------------------------------------------------")
+        print("                                 |                                                 |")
+        print("                                 |                Aperte Z para voltar             |")
+        print("                                 |                                                 |")
+        print("-----------------------------------------------------------------------------------------------------------------------")
+        print("")
+def brasil_belo_horizonte2():
+    while True:
+        if keyboard.is_pressed("z"):
+            brasil_cidades()
+            brasil_cidades2()
             break
 
 #spam opções
@@ -702,31 +733,38 @@ def spam_telegram():
     verificador = None
     verificador2 = None
     verificador3 = None
+    verificador4 = None
     while verificador == None:
         verificador = pyautogui.locateOnScreen("telegram_dia.png")
         verificador2 = pyautogui.locateOnScreen("telegram_noite.png")
         verificador3 = pyautogui.locateOnScreen("telegram_tingido.png")
+        verificador4 = pyautogui.locateOnScreen("telegram_web.png")
         if verificador == None:
             if verificador2 == None:
-                if verificador3 == None: 
-                    print("Caixa de texto não encontrada, certifique-se de que nada esconda a caixa de texto e seu Telegram esteja na língua Portuguêsa, se você tem múltiplos monitores, certifique-se que seu Telegram se encontra na mesma tela em que esta janela foi aberta, após isso tente novamente")
-                    print("")
-                    print("")
-                    spam_apps()
-                    spam_apps2()
-                    break
+                if verificador3 == None:
+                    if verificador4 == None:
+                        print("Caixa de texto não encontrada, certifique-se de que nada esconda a caixa de texto e seu Telegram esteja na língua Portuguêsa, se você tem múltiplos monitores, certifique-se que seu Telegram se encontra na mesma tela em que esta janela foi aberta, após isso tente novamente")
+                        print("")
+                        print("")
+                        spam_apps()
+                        spam_apps2()
+                        break
+                    else:
+                        print("Caixa de texto identificada em seu Telegram")
+                        spam_telegram2()
+                        break
                 else:
-                    print("Caixa de texto identificada em seu Telegram")
-                    spam_telegram2()
-                    break
+                        print("Caixa de texto identificada em seu Telegram")
+                        spam_telegram2()
+                        break
             else:
-                    print("Caixa de texto identificada em seu Telegram")
-                    spam_telegram2()
-                    break
+                        print("Caixa de texto identificada em seu Telegram")
+                        spam_telegram2()
+                        break
         else:
-                    print("Caixa de texto identificada em seu Telegram")
-                    spam_telegram2()
-                    break
+                        print("Caixa de texto identificada em seu Telegram")
+                        spam_telegram2()
+                        break
 def spam_telegram2():
     print("-----------------------------------------------------------------------------------------------------------------------")
     print("")
@@ -774,10 +812,12 @@ def spam_telegram2():
             verificador = pyautogui.locateOnScreen("telegram_dia.png")
             verificador2 = pyautogui.locateOnScreen("telegram_noite.png")
             verificador3 = pyautogui.locateOnScreen("telegram_tingido.png")
+            verificador4 = pyautogui.locateOnScreen("telegram_web.png")
             while mensagens >= 0:
                 pyautogui.moveTo(verificador)
                 pyautogui.moveTo(verificador2)
                 pyautogui.moveTo(verificador3)
+                pyautogui.moveTo(verificador4)
                 pyautogui.click()
                 pyautogui.click()
                 if keyboard.is_pressed("ctrl"):
@@ -826,10 +866,12 @@ def spam_telegram2():
             verificador = pyautogui.locateOnScreen("telegram_dia.png")
             verificador2 = pyautogui.locateOnScreen("telegram_noite.png")
             verificador3 = pyautogui.locateOnScreen("telegram_tingido.png")
+            verificador4 = pyautogui.locateOnScreen("telegram_web.png")
             while mensagens >= 0:
                 pyautogui.moveTo(verificador)
                 pyautogui.moveTo(verificador2)
                 pyautogui.moveTo(verificador3)
+                pyautogui.moveTo(verificador4)
                 pyautogui.click()
                 pyautogui.click()
                 if keyboard.is_pressed("ctrl"):
@@ -878,10 +920,12 @@ def spam_telegram2():
             verificador = pyautogui.locateOnScreen("telegram_dia.png")
             verificador2 = pyautogui.locateOnScreen("telegram_noite.png")
             verificador3 = pyautogui.locateOnScreen("telegram_tingido.png")
+            verificador4 = pyautogui.locateOnScreen("telegram_web.png")
             while mensagens >= 0:
                 pyautogui.moveTo(verificador)
                 pyautogui.moveTo(verificador2)
                 pyautogui.moveTo(verificador3)
+                pyautogui.moveTo(verificador4)
                 pyautogui.click()
                 pyautogui.click()
                 if keyboard.is_pressed("ctrl"):
@@ -924,25 +968,39 @@ def spam_whatsapp():
     print("")
     verificador = None
     verificador2 = None
+    verificador3 = None
+    verificador4 = None
     while verificador == None:
         verificador = pyautogui.locateOnScreen("whatsapp_escuro.png")
         verificador2 = pyautogui.locateOnScreen("whatsapp_claro.png")
+        verificador3 = pyautogui.locateOnScreen("whatsapp_web_claro.png")
+        verificador4 = pyautogui.locateOnScreen("whatsapp_web_escuro.png")
         if verificador == None:
             if verificador2 == None:
-                print("Caixa de texto não encontrada, certifique-se de que nada esconda a caixa de texto e seu WhatsApp esteja na língua Portuguêsa, se você tem múltiplos monitores, certifique-se que seu WhatsApp se encontra na mesma tela em que esta janela foi aberta, após isso tente novamente")
-                print("")
-                print("")
-                spam_apps()
-                spam_apps2()
-                break
+                if verificador3 == None:
+                    if verificador4 == None:
+                        print("Caixa de texto não encontrada, certifique-se de que nada esconda a caixa de texto e seu WhatsApp esteja na língua Portuguêsa, se você tem múltiplos monitores, certifique-se que seu WhatsApp se encontra na mesma tela em que esta janela foi aberta, após isso tente novamente")
+                        print("")
+                        print("")
+                        spam_apps()
+                        spam_apps2()
+                        break
+                    else:
+                        print("Caixa de texto identificada em seu WhatsApp")
+                        spam_whatsapp2()
+                        break
+                else:
+                        print("Caixa de texto identificada em seu WhatsApp")
+                        spam_whatsapp2()
+                        break
             else:
-                print("Caixa de texto identificada em seu WhatsApp")
-                spam_whatsapp2()
-                break
+                        print("Caixa de texto identificada em seu WhatsApp")
+                        spam_whatsapp2()
+                        break
         else:
-            print("Caixa de texto identificada em seu WhatsApp")
-            spam_whatsapp2()
-            break
+                        print("Caixa de texto identificada em seu WhatsApp")
+                        spam_whatsapp2()
+                        break
 def spam_whatsapp2():
     print("-----------------------------------------------------------------------------------------------------------------------")
     print("")
@@ -989,9 +1047,13 @@ def spam_whatsapp2():
             msgs = "mensagens restantes"
             verificador = pyautogui.locateOnScreen("whatsapp_escuro.png")
             verificador2 = pyautogui.locateOnScreen("whatsapp_claro.png")
+            verificador3 = pyautogui.locateOnScreen("whatsapp_web_claro.png")
+            verificador4 = pyautogui.locateOnScreen("whatsapp_web_escuro.png")
             while mensagens >= 0:
                 pyautogui.moveTo(verificador)
                 pyautogui.moveTo(verificador2)
+                pyautogui.moveTo(verificador3)
+                pyautogui.moveTo(verificador4)
                 pyautogui.click()
                 pyautogui.click()
                 if keyboard.is_pressed("ctrl"):
@@ -1039,9 +1101,13 @@ def spam_whatsapp2():
             msgs = "mensagens restantes"
             verificador = pyautogui.locateOnScreen("whatsapp_escuro.png")
             verificador2 = pyautogui.locateOnScreen("whatsapp_claro.png")
+            verificador3 = pyautogui.locateOnScreen("whatsapp_web_claro.png")
+            verificador4 = pyautogui.locateOnScreen("whatsapp_web_escuro.png")
             while mensagens >= 0:
                 pyautogui.moveTo(verificador)
                 pyautogui.moveTo(verificador2)
+                pyautogui.moveTo(verificador3)
+                pyautogui.moveTo(verificador4)
                 pyautogui.click()
                 pyautogui.click()
                 if keyboard.is_pressed("ctrl"):
@@ -1089,9 +1155,13 @@ def spam_whatsapp2():
             msgs = "mensagens restantes"
             verificador = pyautogui.locateOnScreen("whatsapp_escuro.png")
             verificador2 = pyautogui.locateOnScreen("whatsapp_claro.png")
+            verificador3 = pyautogui.locateOnScreen("whatsapp_web_claro.png")
+            verificador4 = pyautogui.locateOnScreen("whatsapp_web_escuro.png")
             while mensagens >= 0:
                 pyautogui.moveTo(verificador)
                 pyautogui.moveTo(verificador2)
+                pyautogui.moveTo(verificador3)
+                pyautogui.moveTo(verificador4)
                 pyautogui.click()
                 pyautogui.click()
                 if keyboard.is_pressed("ctrl"):
@@ -1181,7 +1251,9 @@ def opcoes_localizar_cursor4():
 
 #opção estou com sorte
 def estou_sorte():
-    Imagem = random.randrange(9)
+    Imagem = random.randrange(10)
+    if Imagem == 9:
+        print("Humanos estão constantemente progredindo")
     if Imagem == 8:
         print("Humanos ainda não descobriram todos os tipos de seres vivos Terrestres, imagine quantos não foram descobertos além de nossa observação")
     if Imagem == 7:
